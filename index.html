@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Todo app</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="misEstilos.css">
+
+</head>
+<body>
+
+
+  <div class="wrapper">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-12 mx-auto max-w text-center">
+
+        <!--Header titulo + icono dark/ light mode-->
+
+          <div class="header-todo d-flex align-items-center justify-content-between my-5">
+            <h1 class="mb-0 text-white">TODO</h1>
+            <div id="light-dark-mode" class="cursor-pointer">
+             <!-- <img src="images/icon-sun.svg" alt="">-->
+            </div>
+          </div>
+
+          <!--Input para ingresar tareas-->
+
+          <div class="d-flex align-items-center bg-dark rounded-lg p-3 mb-4 shadow">
+            <input type="checkbox" name="" id="">
+            <input type="text" placeholder="Create a new todo..." class="input-task ml-3" name="" id="">
+          </div>
+
+         <!--Padre caja tareas añadidas-->
+
+         <div class="tasks bg-dark rounded-lg shadow">
+
+           <div class="tasks-container">
+             <div class="tasks-added d-flex align-items-center p-3 border-bottom border-ligth">
+               <label class="d-flex align-items-center cursor-pointer mb-0 w-100">
+                <input type="checkbox" name="" id="">
+                <p class="mb-0 ml-3">Complete online JavaScript course</p>
+               </label>
+               <div class="cross cursor-pointer"></div>
+             </div>
+           
+           
+            <div class="tasks-added d-flex align-items-center p-3 border-bottom border-ligth">
+              <label class="d-flex align-items-center cursor-pointer mb-0 w-100">
+               <input type="checkbox" name="" id="">
+               <p class="mb-0 ml-3">Jog around the park 3x</p>
+              </label>
+              <div class="cross cursor-pointer"></div>
+            </div>
+          
+          
+            <div class="tasks-added d-flex align-items-center p-3 border-bottom border-ligth">
+              <label class="d-flex align-items-center cursor-pointer mb-0 w-100">
+               <input type="checkbox" name="" id="">
+               <p class="mb-0 ml-3">10 minutes meditation</p>
+              </label>
+              <div class="cross cursor-pointer"></div>
+            </div>
+          
+          
+            <div class="tasks-added d-flex align-items-center p-3 border-bottom border-ligth">
+              <label class="d-flex align-items-center cursor-pointer mb-0 w-100">
+               <input type="checkbox" name="" id="">
+               <p class="mb-0 ml-3">Read for 1 hour</p>
+              </label>
+              <div class="cross cursor-pointer"></div>
+            </div>
+          
+          
+            <div class="tasks-added d-flex align-items-center p-3 border-bottom border-ligth">
+              <label class="d-flex align-items-center cursor-pointer mb-0 w-100">
+               <input type="checkbox" name="" id="">
+               <p class="mb-0 ml-3">Pick up groceries</p>
+              </label>
+              <div class="cross cursor-pointer"></div>
+            </div>
+          
+          
+            <div class="tasks-added d-flex align-items-center p-3 border-bottom border-ligth">
+              <label class="d-flex align-items-center cursor-pointer mb-0 w-100">
+               <input type="checkbox" name="" id="">
+               <p class="mb-0 ml-3">Complete Todo App on Frontend Mentor</p>
+              </label>
+              <div class="cross cursor-pointer"></div>
+            </div>
+         </div>
+
+           <!--Barra de filtro escritorio-->
+             <div class="tasks-footer p-3 d-flex justify-content-between">
+               <p class="mb-0 text-white-filter"><span class="n-items">5</span> Items left</p>
+               <div class="filter d-none d-sm-flex justify-content-between text-white-filter ">
+                 <p id="all" class="mb-0 checked cursor-pointer">All</p>
+                 <p id="active" class="mb-0 cursor-pointer mx-3">Active</p>
+                 <p id="completed" class="mb-0 cursor-pointer">Completed</p>
+               </div>
+              <p class="clear-completed mb-0 text-white-filter cursor-pointer">Clear Completed</p>
+             </div>
+        
+          </div>
+         
+           <!--Barra de filtro movil-->
+           <div class="tasks-footer bg-dark rounded-lg p-3 d-flex d-sm-none justify-content-center mt-3 shadow">
+             
+            <div class="filter d-flex justify-content-between text-white">
+              <p id="all" class="mb-0 checked cursor-pointer">All</p>
+              <p id="active" class="mb-0 cursor-pointer mx-3">Active</p>
+              <p id="completed" class="mb-0 cursor-pointer">Completed</p>
+            </div>
+           </div>
+        
+         <div class="attribution text-white mt-5">
+           <small> Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+            Coded by <a href="#">Mariandrea</a>.</small>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- Add dynamic number -->
+  <script src="codigo.js"></script>
+  
+</body>
+</html>

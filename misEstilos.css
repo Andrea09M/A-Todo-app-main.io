@@ -1,0 +1,202 @@
+body{
+    background-image: url(images/bg-desktop-dark.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: 100%;
+    background-color: hsl(235, 21%, 11%);
+    font-family:  'Josefin Sans', sans-serif;
+    font-weight: 400;
+    transition: .2s;
+}
+
+/*Estilo en modo light*/
+body.light{
+    background-image: url(images/bg-desktop-light.jpg);
+    background-color: hsl(0, 0%, 98%);
+}
+
+.bg-dark{
+    background-color: hsl(235, 24%, 19%) !important;
+}
+/*Estilo en modo light*/
+body.light .bg-dark{
+    background-color: hsl(0, 0%, 98%) !important;
+}
+
+
+.text-white{
+    color:hsl(234, 39%, 85%)!important;
+}
+
+
+/*Light*/
+body.light .text-white{
+    color:hsl(235, 19%, 35%)!important;
+}
+
+#light-dark-mode{
+    background-image: url(images/icon-sun.svg);
+    width: 26px;
+    height: 26px;
+}
+/*Light*/
+body.light #light-dark-mode{
+    background-image: url(images/icon-moon.svg);
+}
+
+.text-white-filter{
+    color: hsl(234, 11%, 52%);
+}
+
+/*Light*/
+body.light .text-white-filter{
+    color: hsl(236, 9%, 61%);
+}
+
+.border-ligth {
+    border-color: hsl(237, 14%, 26%) !important;
+}
+
+/*Light*/
+body.light .border-ligth {
+    border-color: hsl(236, 33%, 92%) !important;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.max-w{
+    max-width: 600px;
+}
+
+/*p{
+ font-family:  'Josefin Sans', sans-serif;
+}*/
+
+.header-todo h1 {
+  font-family:  'Josefin Sans', sans-serif;
+  font-weight: 700;
+  color: #fff !important;
+  letter-spacing: 15px;
+}
+
+/*Light*/ 
+body.light .header-todo h1 {
+    font-family:  'Josefin Sans', sans-serif;
+    font-weight: 700;
+    color: #fff !important;
+    letter-spacing: 15px;
+  }
+
+input[type="text"]{
+    background: transparent;
+    outline: none;
+    border: 0;
+    color: #fff;
+    width: 90%;
+}
+
+/*Light*/
+body.light input[type="text"]{
+    color: hsl(235, 19%, 35%);
+}
+
+.cross{
+    background-image: url(images/icon-cross.svg);
+    width: 18px;
+    height: 18px;
+    opacity: 0;
+    transition: .3s;
+}
+input[type="checkbox"]{
+    appearance: none;
+    background: transparent;
+    width: 21px;
+    height: 21px;
+    border-radius: 100%;
+    border: 1px solid hsl(237, 14%, 26%);
+    cursor: pointer;
+}
+/*Light*/
+body.light input[type="checkbox"]{
+    border: 1px solid hsl(236, 33%, 92%) ;
+
+}
+
+/*
+input[type="checkbox"]:hover{
+    border-radius: 50px;
+    border:1px solid transparent;
+    background: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%)) border-box;
+    mask: 
+    linear-gradient(#fff 0 0) padding-box,
+    linear-gradient (#fff 0 0);
+    -webkit-mask:
+    linear-gradient(#fff 0 0) padding-box,
+    linear-gradient (#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+}
+*/
+input[type="checkbox"]:checked{
+    background: url(images/icon-check.svg), linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 0;
+}
+
+.checked{
+    color: rgb(9, 9, 247);
+}
+
+input[type="checkbox"]:checked + p{
+    text-decoration: line-through;
+    color: hsl(233, 14%, 35%) !important;
+}
+/*Light*/
+body.light input[type="checkbox"]:checked + p{
+    text-decoration: line-through;
+    color: hsl(233, 11%, 84%) !important;
+}
+
+.tasks-added:hover > .cross{
+  opacity: 1;
+}
+
+.tasks-added p{
+ color: hsl(234, 39%, 85%) !important;
+}
+
+/*Light*/
+ body.light .tasks-added p{
+    color: hsl(235, 19%, 35%) !important;
+   }
+
+@media screen and (max-width: 576px){
+    .body{
+        background-image: url(images/bg-mobile-dark.jpg);
+    }
+
+    body.light{
+        background-image: url(images/bg-mobile-light.jpg);
+    }
+
+    .cross{
+        opacity: 1;
+    } 
+}
+
+.Very-Dark-Blue {color:hsl(235, 21%, 11%)};
+.Very-Dark-Desaturated-Blue {color:hsl(235, 24%, 19%)};
+.Light-Grayish-Blue {color:hsl(234, 39%, 85%)};
+.Light-Grayish-Blue-hover {color: hsl(236, 33%, 92%)};
+.Dark-Grayish.Blue {color:hsl(234, 11%, 52%)};
+.Very-Dark-Grayish-Blue {color:hsl(233, 14%, 35%)};
+.Very-Dark-Grayish-Blue {color:hsl(237, 14%, 26%)};
+
+.Very-Light-Gray{color:hsl(0, 0%, 98%)};
+.Very-Light-Grayish-Blue{color: hsl(236, 33%, 92%)}; 
+.Light-Grayish-Blue{color: hsl(233, 11%, 84%) }; 
+.Dark-Grayish-Blue{color: hsl(236, 9%, 61%)}; 
+.Very-Dark-Grayish-Blue{color: hsl(235, 19%, 35%)};

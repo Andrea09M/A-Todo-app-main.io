@@ -174,8 +174,8 @@ body.light input[type="checkbox"]:checked + p{
    }
 
 @media screen and (max-width: 576px){
-    .body{
-        background-image: url(images/bg-mobile-dark.jpg);
+    body{
+        background-image: url(images/bg-mobil-dark.jpg);
     }
 
     body.light{
